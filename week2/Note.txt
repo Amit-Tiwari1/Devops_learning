@@ -1,0 +1,8 @@
+Without any specifiy unicode to the readFileSync method than it gives buffer data. which every letter 16 bytes represent hexacode in ascii code we can see.
+readFileSync wait to task complete and readFile work based on context switching method. which one first done it return output.
+Function argument is passing any function to other function as a argument.
+asyncronus function has callback functions. which call this callback function when process will completed.
+when we are working I/O and CPU incentive task both suppose we are working two work similary one is washing clothes and running some steps first washing machine start and go to running on teadmil when i will be free from running or complete than i will check clothes are washed or not although clothes are washed before it waith in queue task to execute.
+In js there are four term or part how to internally work. 1. callstack- which is currently running and we can say that what is cpu doing right now. 2- webapi- all asyncronous task loaded in this section and when complete task than it push callbackQue to tell i am done if call stack busy than it wait in call backque when call stack free than event loop push into call stack. 3- call backque - call back queue where wait completed asyncronous task or we can say that webapis completed task. 4- EventLoop- when loop run when call stack is free and push callbackQue process into call stack so that it can complete a process.
+All asyncronous has either callback or promissyfied type.
+A Promise in js is an object that represent the eventually completion (or failuer) of an asyncronous operations.

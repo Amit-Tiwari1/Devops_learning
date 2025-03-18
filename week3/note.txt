@@ -1,0 +1,10 @@
+************************** Document object model **************************
+1. dom manuplation is to do dynamically we can change html css and js script
+3. dynamically is that we can add more content 
+4. we can not change static page statically
+5. there are some function of Document object which provides us broser(fetching elements).
+a. querySelector
+b. querySelectorAll
+c. getElementById
+d. getElementByClassName
+e. getElementsByClassName 
