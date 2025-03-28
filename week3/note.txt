@@ -8,3 +8,16 @@ b. querySelectorAll
 c. getElementById
 d. getElementByClassName
 e. getElementsByClassName 
+
+************************************* second video *************************************
+## Advance dom manupulation ##
+
+1. state and component
+we can also add or make react type liberary user only worry about state and component only.
+a:- state- the variable parts of an app.
+b:- components - how to render state on the screen.
+c:- Rendering - taking the state and Rendering it on the DOM based on the component
+
+2. what is recancelation in react?
+ans - recancelation is a concept that react does not delete all state when state is updated if only add or remove or updated not delete every thing than add.
+

@@ -1,4 +1,62 @@
-<!DOCTYPE html>
+<!-- Example-5 to add -->
+
+<!-- Example-4 to add element
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add element</title>
+ </head>
+ <body>
+    <div id="main" style="display: flex; margin: 5px;">
+        <h2 style="color: red;">Adding Element in dom</h2><br>
+    </div>
+    <button onclick="add()">Add new element</button>
+ </body>
+ <script>
+    function add(){
+        const divEl = document.createElement("h2");
+    divEl.innerHTML="this is test div ";
+    const targetEle = document.getElementById("main");
+    targetEle.appendChild(divEl)
+    }
+   
+ </script>
+ </html> -->
+
+<!-- Example-3 to update any document oject model -->
+ <!-- <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update example</title>
+ </head>
+ <body>
+    <h3>To see user name click next button </h3>
+    <p>Amit</p>
+    <button onclick="changeName()">Next</button>
+ </body>
+ <script>
+    let count=0
+function changeName(){
+    const allUsers = ["Naman","Rajesh","Mamta","Anshu","Raunak","Tushar","Ankit","Pankaj"]
+    const getEle=document.querySelector("p");
+
+    if(count>=allUsers.length){
+        getEle.innerHTML="All user done!"
+    }else{
+        getEle.innerHTML=allUsers[count]
+    }
+    count++ 
+}
+ </script>
+ </html> -->
+
+
+<!-- Example-2 to remove child or element from html node or by clicking button using distory method-->
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,16 +64,75 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> Dom Manupulation Practice </h1>
-    <p> Here is example </p><br><br>
-    <h2>0</h2>
-    <h2>Heading 2.1</h2>
-    <h2>Heading 2.2</h2>
+    test
+</body>
+</html>
+-->
+
+
+<!-- Example-1 to remove child or element from html node or by clicking button -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <h2 style="text-align: center;">To do lists </h2>
+   <div style="width: 50%; margin: auto;">
+
+    <div id="todo-1" style="display: flex; ">
+        <p>Have Breakfast</p>
+        <button onclick="deletetodo(1)" style="margin-left: 5px; padding: 3px;margin: 5px;" >Completed</button>
+    </div>
+    <div id="todo-2" style="display: flex;">
+        <p>Get Ready </p>
+                <button onclick="deletetodo(2)"style="margin-left: 5px; padding: 3px;margin: 5px;" >Completed</button>
+
+    </div>
+    <div id="todo-3" style="display: flex;">
+        <p>Go to office</p>
+                <button onclick="deletetodo(3)" style="margin-left: 5px; padding: 3px; margin: 5px;">Completed</button>
+
+    </div>
+    <div id="todo-4" style="display: flex;">
+        <p>Go to ADG sir office </p>
+                <button onclick="deletetodo(4)" style="margin-left: 5px; padding: 3px; margin: 5px;">Completed</button>
+
+    </div>
+    <div id="todo-5" style="display: flex;">
+        <p>Have Lunch </p>
+                <button onclick="deletetodo(5)" style="margin-left: 5px; padding: 3px;margin: 5px;" onclick="">Completed</button>
+
+    </div>
+    <div id="todo-6" style="display: flex;">
+        <p>Discussion </p>
+                <button onclick="deletetodo(6)" style="margin-left: 5px; padding: 3px;margin: 5px;">Completed</button>
+
+    </div>
+    <div id="todo-7" style="display: flex;">
+        <p>Go back to home </p>
+        <button onclick="deletetodo(7)" style="margin-left: 5px; padding: 3px;margin: 5px;">Completed</button>
+        
+    </div>
+
+   </div>
     
 </body>
-<script src="script.js">
+
     
     
+    
+<script>
+    // const element = document.getElementById("todo-1")
+    // console.log("Id is ", element);
+
+    function deletetodo(index){
+const element = document.getElementById("todo-"+index);
+console.log("working ", element);
+element.parentNode.removeChild(element);
+    }
     
 </script>
-</html>
+</html> 

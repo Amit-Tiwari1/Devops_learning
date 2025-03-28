@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Just like react component</title>
+  </head>
+  <body>
+    <div>
+      <input type="text" />
+      <button onclick="addTodo()">Add</button>
+      <div id="todo-container"></div>
+    </div>
+  </body>
+  <script>
+    let todos = [];
+    function addTodo() {
+      const inputValue = document.querySelector("input").value;
+      todos.push({
+        title: inputValue,
+      });
+      render();
+    }
+
+    function createToDoComponent(todo) {
+      console.log("todo is getting ", todo);
+      
+      const divEle = document.createElement("div");
+      const h3Ele = document.createElement("h3");
+      const deleteBtn = document.createElement("button");
+      deleteBtn.innerHTML = "Delete";
+      h3Ele.innerHTML = todo.title;
+      divEle.appendChild(h3Ele);
+      divEle.appendChild(deleteBtn);
+      return divEle;
+    }
+    function render() {
+      document.getElementById("todo-container").innerHTML = "";
+      for (let i = 0; i < todos.length; i++) {
+        const elements = createToDoComponent(todos[i])
+        document.getElementById("todo-container").appendChild(elements);
+      }
+    }
+  </script>
+</html>

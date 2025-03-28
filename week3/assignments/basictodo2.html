@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic todo 2</title>
+</head>
+<body>
+    <input type="text" placeholder="enter list">
+    <button onclick="add()">Add</button>
+</body>
+<script>
+      function deletetodo(index){
+            console.log(index);
+            
+            const getDeleted = document.getElementById(index);
+            console.log("getdeletediv ", getDeleted);
+            
+            getDeleted.parentNode.removeChild(getDeleted)
+            
+        }
+        let cnt = 1;
+    function add(){
+        const inputEle = document.querySelector("input");
+        const value = inputEle.value;
+        const newDivEl = document.createElement("div");
+        newDivEl.setAttribute("id",cnt)
+        newDivEl.innerHTML=`${value} <button onclick="deletetodo(${cnt})">Delete </button>`;
+        document.querySelector("body").appendChild(newDivEl);
+        cnt = cnt + 1 
+    }
+</script>
+</html>

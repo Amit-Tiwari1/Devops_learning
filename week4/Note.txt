@@ -1,0 +1,25 @@
+********************************* Node js, Bun and js runtime **************
+
+Q-1 What is Node js?
+Ans-1 Node js is open-source which provide run time js envoirement. In 1996,1997 netscap was broser which introduced js,html,css as a broser libereries. 
+Q-2 What is runtime?
+Ans-2 The envoirement where javascript executed.
+a- On the server 
+b- In the broser
+c- On the small watch
+
+Q-3 Broser has some enginers that help to run js.
+Chrome - V8 enginers
+Mozilla - Spiderman
+Safari - JavascriptScriptCore
+
+Q-4 What is difference between Javascript V8 engine and bun engine.
+Ans- javascript V8 engine is slow than bun that why bun can replace V8 engine. developer does not have to develop syntax of bun only comple concept will be change.bun run Zig low level language.
+
+Q-5 How to initialize node js file?
+Ans-5 Run command - npm init -y
+
+Q-6 What is NPM 
+Ans-6 NPM stand for node package manager. npm used for manage javascript liberaries like install, uninstall, update executed
+
+
